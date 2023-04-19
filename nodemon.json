@@ -1,0 +1,7 @@
+{
+    "env": {
+        "MONGO_USER": "JoshuaMclelland",
+        "MONGO_PASSWORD": "KBDargOm3SadOidX",
+        "MONGO_DB": "star-db"
+    }
+}
