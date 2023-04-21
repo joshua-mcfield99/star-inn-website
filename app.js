@@ -21,7 +21,7 @@ app.use(
         graphiql: true
 }));
 
-mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@staradmin.yfsea3q.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`)
+mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@staradmin.yfsea3q.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority&authSource=admin`)
 .then(()=> {
     app.listen(3000);
 })
