@@ -7,6 +7,7 @@ type Event {
     description: String!
     date: String!
     creator: User!
+
 }
 
 type User {
@@ -41,6 +42,7 @@ type RootQuery {
 type RootMutation {
     createEvent(eventInput: EventInput): Event
     createUser(userInput: UserInput) : User
+    deleteEvent(title: String!): Event
 }
 
 schema {
